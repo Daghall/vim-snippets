@@ -1,4 +1,6 @@
 # Made in Sweden
+snippet sleep
+	await new Promise((resolve) => setTimeout(resolve, ${1:5} * 1000));
 snippet ifb
 	if (${0}) return;
 snippet {
