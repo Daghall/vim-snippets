@@ -1,30 +1,26 @@
 snippet des "describe('thing', () => { ... })" b
-	describe('${1:}', () => {
-		${0:${VISUAL}}
+	describe("${1:}", () => {
+	  ${0}
 	});
 snippet it "it('should do', () => { ... })" b
-	it('${1:}', () => {
-		${0:${VISUAL}}
-	});
-snippet xit "xit('should do', () => { ... })" b
-	xit('${1:}', () => {
-		${0:${VISUAL}}
+	it("${1:}", () => {
+	  ${0}
 	});
 snippet bef "before(() => { ... })" b
 	before(() => {
-		${0:${VISUAL}}
+	  ${0}
 	});
 snippet befe "beforeEach(() => { ... })" b
 	beforeEach(() => {
-		${0:${VISUAL}}
+	  ${0}
 	});
 snippet aft "after(() => { ... })" b
 	after(() => {
-		${0:${VISUAL}}
+	  ${0}
 	});
 snippet afte "afterEach(() => { ... })" b
 	afterEach(() => {
-		${0:${VISUAL}}
+	  ${0}
 	});
 snippet exp "expect(...)" b
 	expect(${1:})${0};
@@ -32,3 +28,41 @@ snippet expe "expect(...).to.equal(...)" b
 	expect(${1:}).to.equal(${0});
 snippet expd "expect(...).to.deep.equal(...)" b
 	expect(${1:}).to.deep.equal(${0});
+
+
+# mocha-cakes
+
+snippet Feature
+	Feature("${1:}", () => {
+	  ${0}
+	});
+
+snippet Scenario
+	Scenario("${1:}", () => {
+	  ${0}
+	});
+
+snippet Given
+	Given("${1:}", () => {
+	  ${0}
+	});
+
+snippet When
+	When("${1:}", () => {
+	  ${0}
+	});
+
+snippet Then
+	Then("${1:}", () => {
+	  ${0}
+	});
+
+snippet And
+	And("${1:}", () => {
+	  ${0}
+	});
+
+snippet But
+	But("${1:}", () => {
+	  ${0}
+	});
