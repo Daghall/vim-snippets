@@ -20,9 +20,9 @@ snippet for "for (...) {...}"
 		${0}
 	}
 snippet cls
-	console.log(JSON.stringify(${0}, null, 2));
+	console.log(JSON.stringify(${0}, null, 2)); // eslint-disable-line no-console
 snippet clx
-	console.log("XXX${1}"${0});
+	console.log("XXX${1}"${0}); // eslint-disable-line no-console
 # Functions
 # prototype
 snippet proto
@@ -263,49 +263,49 @@ snippet qsa
 snippet de
 	debugger;
 snippet cl "console.log"
-	console.log(${0});
+	console.log(${0}); // eslint-disable-line no-console
 snippet cd "console.debug"
-	console.debug(${0});
+	console.debug(${0}); // eslint-disable-line no-console
 snippet ce "console.error"
-	console.error(${0});
+	console.error(${0}); // eslint-disable-line no-console
 snippet cw "console.warn"
-	console.warn(${0});
+	console.warn(${0}); // eslint-disable-line no-console
 snippet ci "console.info"
-	console.info(${0});
+	console.info(${0}); // eslint-disable-line no-console
 snippet ct "console.trace"
-	console.trace(${0:label});
+	console.trace(${0:label}); // eslint-disable-line no-console
 snippet ctime "console.time ... console.timeEnd"
-	console.time("${1:label}");
+	console.time("${1:label}"); // eslint-disable-line no-console
 	${0:${VISUAL}}
-	console.timeEnd("$1");
+	console.timeEnd("$1"); // eslint-disable-line no-console
 snippet ctimestamp "console.timeStamp"
-	console.timeStamp("${1:label}");
+	console.timeStamp("${1:label}"); // eslint-disable-line no-console
 snippet ca "console.assert"
-	console.assert(${1:expression}, ${0:obj});
+	console.assert(${1:expression}, ${0:obj}); // eslint-disable-line no-console
 snippet cclear "console.clear"
-	console.clear();
+	console.clear(); // eslint-disable-line no-console
 snippet cdir "console.dir"
-	console.dir(${0:obj});
+	console.dir(${0:obj}); // eslint-disable-line no-console
 snippet cdirx "console.dirxml"
-	console.dirxml(${1:object});
+	console.dirxml(${1:object}); // eslint-disable-line no-console
 snippet cgroup "console.group"
-	console.group("${1:label}");
+	console.group("${1:label}"); // eslint-disable-line no-console
 	${0:${VISUAL}}
-	console.groupEnd();
+	console.groupEnd(); // eslint-disable-line no-console
 snippet cgroupc "console.groupCollapsed"
-	console.groupCollapsed("${1:label}");
+	console.groupCollapsed("${1:label}"); // eslint-disable-line no-console
 	${0:${VISUAL}}
-	console.groupEnd();
+	console.groupEnd(); // eslint-disable-line no-console
 snippet cprof "console.profile"
-	console.profile("${1:label}");
+	console.profile("${1:label}"); // eslint-disable-line no-console
 	${0:${VISUAL}}
 	console.profileEnd();
 snippet ctable "console.table"
-	console.table(${1:"${2:value}"});
+	console.table(${1:"${2:value}"}); // eslint-disable-line no-console
 # Misc
 # "use strict";
 snippet us
-	t"use strict";
+	"use strict";
 # setTimeout function
 snippet timeout
 	setTimeout(function () {${0}}${2}, ${1:10});
